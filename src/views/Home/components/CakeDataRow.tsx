@@ -129,20 +129,16 @@ const CakeDataRow = () => {
     <Grid>
       <Flex flexDirection="column" style={{ gridArea: 'a' }}>
         <Text color="textSubtle">{t('Circulating Supply')}</Text>
-        {circulatingSupply ? (
-          <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={circulatingSupply} />
-        ) : (
-          <Skeleton height={24} width={126} my="4px" />
-        )}
+        <Text lineHeight="1.1" fontSize="24px" bold color="textSubtle">
+          {t('426 Trillion')}
+        </Text>
       </Flex>
 
       <Flex flexDirection="column" style={{ gridArea: 'd' }}>
         <Text color="textSubtle">{t('Burned to date')}</Text>
-        {burnedBalance ? (
-          <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={burnedBalance} />
-        ) : (
-          <Skeleton height={24} width={126} my="4px" />
-        )}
+        <Text lineHeight="1.1" fontSize="24px" bold color="textSubtle">
+          {t('73 Trillion')}
+        </Text>
       </Flex>
     </Grid>
   )
