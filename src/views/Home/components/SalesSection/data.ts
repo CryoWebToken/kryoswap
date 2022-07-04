@@ -50,19 +50,19 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('CAKE makes our world go round.'),
+  headingText: t('Cryogen is our first fully vetted, audited & doxxed project to list here'),
   bodyText: t(
-    'CAKE token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'With MANY use-cases already deployed, a strong team & community, Cryogen is sure one to watch grow! Their utilities include: Cryoweb, Cryopunks, Cryosafe, Cryoflow & Cryowin currently, all done in 5 months time.',
   ),
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: t('Buy CAKE'),
+    to: '/swap?outputCurrency=0x6A73A99fAC60c265863307c5A40abf32F0a040aC',
+    text: t('Buy Cryogen'),
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/tokenomics/cake',
-    text: t('Learn'),
+    to: 'https://cryogen.life',
+    text: t('Learn More'),
     external: true,
   },
 
