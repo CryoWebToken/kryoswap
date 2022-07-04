@@ -108,16 +108,18 @@ const Hero = () => {
         id="homepage-hero"
       >
         <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="secondary" mb="24px">
-            {t('The moon is made of pancakes.')}
+          <Heading scale="md" color="secondary" mb="14px">
+            {t('Cryogen is our first fully vetted, audited & doxxed project to list here')}
           </Heading>
-          <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+          <Heading scale="md" mb="14px">
+            {t(
+              'With MANY use-cases already deployed, a strong team & community, Cryogen is sure one to watch grow! Their utilities include: Cryoweb, Cryopunks, Cryosafe, Cryoflow & Cryowin currently, all done in 5 months time.',
+            )}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
             <NextLinkFromReactRouter to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Cryogen')}</Button>
             </NextLinkFromReactRouter>
           </Flex>
         </Flex>
