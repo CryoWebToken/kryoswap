@@ -1,7 +1,7 @@
 {
   "short_name": "KryoSwap",
   "name": "KryoSwap",
-  "description": "The safest AMM Exchange on the BSC",
+  "description": "The Safest AMM DEFI Exchange on the BSC!",
   "homepage_url": "https://kryoswap.com",
   "start_url": ".",
   "display": "standalone",
@@ -10,8 +10,8 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "favicon.png",
-      "type": "image/png",
+      "src": "favicon.ico",
+      "type": "image/x-icon",
       "sizes": "16x16"
     },
     {
