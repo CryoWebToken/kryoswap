@@ -130,14 +130,14 @@ const CakeDataRow = () => {
       <Flex flexDirection="column" style={{ gridArea: 'a' }}>
         <Text color="textSubtle">{t('Circulating Supply')}</Text>
         <Text lineHeight="1.1" fontSize="24px" bold color="textSubtle">
-          {t('426 Trillion')}
+          {t('426,966,040,442,141')}
         </Text>
       </Flex>
 
       <Flex flexDirection="column" style={{ gridArea: 'd' }}>
         <Text color="textSubtle">{t('Burned to date')}</Text>
         <Text lineHeight="1.1" fontSize="24px" bold color="textSubtle">
-          {t('73 Trillion')}
+          {t('73,033,959,557,858')}
         </Text>
       </Flex>
     </Grid>
