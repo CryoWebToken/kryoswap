@@ -113,7 +113,7 @@ const Hero = () => {
           </Heading>
           <Heading scale="md" mb="14px">
             {t(
-              'With MANY use-cases already deployed, a strong team & community, Cryogen is sure one to watch grow! Their utilities include: Cryoweb, Cryopunks, Cryosafe, Cryoflow & Cryowin currently, all done in 5 months time.',
+              'Cryogen has MANY use-cases already deployed, a strong team & community. Earn $Cake on all transactions just by holding 200bn or more Cryogen. You can also Stake Cryogen to earn even more.',
             )}
           </Heading>
           <Flex>
