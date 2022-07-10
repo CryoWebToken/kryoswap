@@ -62,7 +62,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Audits",
-        href: "https://docs.pancakeswap.financekryoswap.com/audit",
+        href: "https://docs.kryoswap.com/audit",
       },
       {
         label: "Careers",
