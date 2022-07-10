@@ -225,13 +225,11 @@ function CurrencySearch({
         <Row>
           <Input
             id="token-search-input"
-            placeholder={t('Search name or paste address')}
+            placeholder={t('Import Of Non Approved Tokens Is: OFF')}
             scale="lg"
             autoComplete="off"
             value={searchQuery}
             ref={inputRef as RefObject<HTMLInputElement>}
-            onChange={handleInput}
-            onKeyDown={handleEnter}
           />
         </Row>
         {showCommonBases && (
