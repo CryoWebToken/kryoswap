@@ -30,8 +30,7 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd, color = "textSubtle", showSk
       href="https://kryoswap.com/swap?outputCurrency=0x6A73A99fAC60c265863307c5A40abf32F0a040aC"
       target="_blank"
     >
-      <LogoRound width="24px" mr="8px" />
-      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color={color} bold>{`Cake Price: $${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : showSkeleton ? (
     <Skeleton width={80} height={24} />

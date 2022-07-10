@@ -1,6 +1,6 @@
 import { Language } from "../LangSelector/types";
 import { FooterLinkType } from "./types";
-import { TwitterIcon, TelegramIcon, RedditIcon, InstagramIcon, GithubIcon, DiscordIcon, MediumIcon } from "../Svg";
+import { TwitterIcon, TelegramIcon, RedditIcon, InstagramIcon, GithubIcon } from "../Svg";
 
 export const footerLinks: FooterLinkType[] = [
   {
@@ -8,22 +8,11 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://docs.kryoswap.com/contact-us",
-      },
-      {
-        label: "Blog",
-        href: "https://kryoswap.medium.com/",
+        href: "https://t.me/cryowebtoken",
       },
       {
         label: "Community",
-        href: "https://docs.kryoswap.com/contact-us/telegram",
-      },
-      {
-        label: "CAKE",
-        href: "https://docs.kryoswap.com/tokenomics/cake",
-      },
-      {
-        label: "—",
+        href: "https://t.me/cryowebtoken",
       },
       {
         label: "Online Store",
@@ -106,16 +95,6 @@ export const socials = [
     label: "Github",
     icon: GithubIcon,
     href: "https://github.com/cryowebtoken/",
-  },
-  {
-    label: "Discord",
-    icon: DiscordIcon,
-    href: "https://discord.gg/kryoswap",
-  },
-  {
-    label: "Medium",
-    icon: MediumIcon,
-    href: "https://kryoswap.medium.com/",
   },
 ];
 

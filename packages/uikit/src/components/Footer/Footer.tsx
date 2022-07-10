@@ -65,9 +65,6 @@ const MenuItem: React.FC<FooterProps> = ({
               ))}
             </StyledList>
           ))}
-          <Box display={["none", null, "block"]}>
-            <LogoWithTextIcon isDark width="160px" />
-          </Box>
         </Flex>
         <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
         <StyledToolsContainer
@@ -84,20 +81,6 @@ const MenuItem: React.FC<FooterProps> = ({
               color={darkColors.textSubtle as keyof Colors}
               dropdownPosition="top-right"
             />
-          </Flex>
-          <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
-            <Box mr="20px">
-              <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
-            </Box>
-            <Button
-              as="a"
-              href="https://kryoswap.com/swap?outputCurrency=0x6A73A99fAC60c265863307c5A40abf32F0a040aC"
-              target="_blank"
-              scale="sm"
-              endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
-            >
-              {buyCakeLabel}
-            </Button>
           </Flex>
         </StyledToolsContainer>
       </Flex>
