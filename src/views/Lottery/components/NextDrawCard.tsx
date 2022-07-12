@@ -140,74 +140,27 @@ const NextDrawCard = () => {
     <StyledCard>
       <CardHeader p="16px 24px">
         <Flex justifyContent="space-between">
-          <Heading mr="12px">{t('Next Draw')}</Heading>
-          <Text>
-            {currentLotteryId && `#${getNextDrawId()}`} {Boolean(endTime) && getNextDrawDateTime()}
-          </Text>
+          <Heading mr="12px">{t('Use The Below Form To Buy')}</Heading>
         </Flex>
       </CardHeader>
       <CardBody>
         <Grid>
           <Flex justifyContent={['center', null, null, 'flex-start']}>
-            <Heading>{t('Prize Pot')}</Heading>
+            <Heading>{t('KryoSwap Fiat OnRamp')}</Heading>
           </Flex>
           <Flex flexDirection="column" mb="18px">
-            {getPrizeBalances()}
-          </Flex>
-          <Box display={['none', null, null, 'flex']}>
-            <Heading>{t('Your tickets')}</Heading>
-          </Box>
-          <Flex flexDirection={['column', null, null, 'row']} alignItems={['center', null, null, 'flex-start']}>
-            {isLotteryOpen && (
-              <Flex
-                flexDirection="column"
-                mr={[null, null, null, '24px']}
-                alignItems={['center', null, null, 'flex-start']}
-              >
-                {account && (
-                  <Flex justifyContent={['center', null, null, 'flex-start']}>
-                    <Text display="inline">{youHaveText} </Text>
-                    {!userTickets.isLoading ? (
-                      <Balance value={userTicketCount} decimals={0} display="inline" bold mx="4px" />
-                    ) : (
-                      <Skeleton mx="4px" height={20} width={40} />
-                    )}
-                    <Text display="inline"> {ticketsThisRoundText}</Text>
-                  </Flex>
-                )}
-                {!userTickets.isLoading && userTicketCount > 0 && (
-                  <Button
-                    onClick={onPresentViewTicketsModal}
-                    height="auto"
-                    width="fit-content"
-                    p="0"
-                    mb={['32px', null, null, '0']}
-                    variant="text"
-                    scale="sm"
-                  >
-                    {t('View your tickets')}
-                  </Button>
-                )}
-              </Flex>
-            )}
-            <BuyTicketsButton disabled={ticketBuyIsDisabled} maxWidth="280px" />
+            <Text>
+              <iframe
+                src="https://widget.onramper.com?color=266677&apiKey=pk_test_2M8G4ogrYT0dF6dTlcM0yFvZkTIGoRYoRXrDndbOSdU0"
+                height="660px"
+                width="482px"
+                title="Onramper widget"
+                allow="accelerometer; autoplay; camera; gyroscope; payment"
+              />
+            </Text>
           </Flex>
         </Grid>
       </CardBody>
-      <CardFooter p="0">
-        {isExpanded && (
-          <NextDrawWrapper>
-            <RewardBrackets lotteryNodeData={currentRound} />
-          </NextDrawWrapper>
-        )}
-        {(status === LotteryStatus.OPEN || status === LotteryStatus.CLOSE) && (
-          <Flex p="8px 24px" alignItems="center" justifyContent="center">
-            <ExpandableLabel expanded={isExpanded} onClick={() => setIsExpanded(!isExpanded)}>
-              {isExpanded ? t('Hide') : t('Details')}
-            </ExpandableLabel>
-          </Flex>
-        )}
-      </CardFooter>
     </StyledCard>
   )
 }
