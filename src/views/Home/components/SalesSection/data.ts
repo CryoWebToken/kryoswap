@@ -51,6 +51,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Cryogen is our first fully vetted, audited & doxxed project to list here'),
+
   bodyText: t(
     'Cryogen has MANY use-cases already deployed, a strong team & community. Earn $Cake on all transactions just by holding 200bn or more Cryogen. You can also Stake Cryogen to earn even more.',
   ),
@@ -65,7 +66,6 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     text: t('Learn More'),
     external: true,
   },
-
   images: {
     path: 'https://cryogen.life/images/',
     attributes: [{ src: '', alt: t('Cryogen') }],
