@@ -35,6 +35,22 @@
       "logoURI": "https://cryogen.life/images/cryogen_medium_blackish.png"
     },
     {
+      "name": "Farmageddon",
+      "symbol": "FG",
+      "address": "0x4492cA0AFF6D603e18Aea5075B49A5ff76b9Ea06",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cryogen.life/images/fg.png"
+    },
+    {
+      "name": "Fertilizer",
+      "symbol": "FRT",
+      "address": "0xd51237A6F3219d186f0C8d8Dd957b1Bcb3Ce5d48",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cryogen.life/images/frt.png"
+    },
+    {
       "name": "PancakeSwap Token",
       "symbol": "CAKE",
       "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",

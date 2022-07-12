@@ -65,7 +65,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/kryoswap",
+    href: "https://twitter.com/CryoWebOfficial",
   },
   {
     label: "Telegram",
@@ -84,12 +84,12 @@ export const socials = [
   {
     label: "Reddit",
     icon: RedditIcon,
-    href: "https://reddit.com/r/kryoswap",
+    href: "https://www.reddit.com/r/CryoWebToken/",
   },
   {
     label: "Instagram",
     icon: InstagramIcon,
-    href: "https://instagram.com/kryoswap_official",
+    href: "https://www.instagram.com/cryogenofficial/",
   },
   {
     label: "Github",

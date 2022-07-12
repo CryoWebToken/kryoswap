@@ -58,7 +58,7 @@ function MyApp(props: AppProps) {
         <meta name="twitter:description" content="Safety In Defi, All Projects here are KYC'd and Audited By Cryogen" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="KryoSwap - The latest Evolution of Safe DeFi Exchanges" />
-        <title>PancakeSwap</title>
+        <title>KryoSwap</title>
       </Head>
       <Providers store={store}>
         <Blocklist>

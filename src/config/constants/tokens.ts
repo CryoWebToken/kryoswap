@@ -38,6 +38,22 @@ export const mainnetTokens = defineTokens({
     'Cryogen',
     'https://cryogen.life',
   ),
+  FG: new Token(
+    MAINNET,
+    '0x4492cA0AFF6D603e18Aea5075B49A5ff76b9Ea06',
+    18,
+    'FARMAGEDDON',
+    'FG',
+    'https://farmageddon.farm/',
+  ),
+  FRT: new Token(
+    MAINNET,
+    '0xd51237A6F3219d186f0C8d8Dd957b1Bcb3Ce5d48',
+    18,
+    'FERTILIZER',
+    'FRT',
+    'https://farmageddon.farm/',
+  ),
   gmi: new Token(MAINNET, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
   beta: new Token(
