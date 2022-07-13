@@ -140,20 +140,17 @@ const NextDrawCard = () => {
     <StyledCard>
       <CardHeader p="16px 24px">
         <Flex justifyContent="space-between">
-          <Heading mr="12px">{t('Use The Below Form To Buy')}</Heading>
+          <Heading mr="12px">{t('KryoSwap Fiat OnRamp')}</Heading>
         </Flex>
       </CardHeader>
       <CardBody>
         <Grid>
-          <Flex justifyContent={['center', null, null, 'flex-start']}>
-            <Heading>{t('KryoSwap Fiat OnRamp')}</Heading>
-          </Flex>
-          <Flex flexDirection="column" mb="18px">
+          <Flex>
             <Text>
               <iframe
                 src="https://widget.onramper.com?color=266677&apiKey=pk_test_2M8G4ogrYT0dF6dTlcM0yFvZkTIGoRYoRXrDndbOSdU0"
                 height="660px"
-                width="482px"
+                width="382px"
                 title="Onramper widget"
                 allow="accelerometer; autoplay; camera; gyroscope; payment"
               />
