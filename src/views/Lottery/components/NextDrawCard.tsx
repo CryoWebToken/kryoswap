@@ -44,7 +44,7 @@ const StyledCard = styled(Card)`
   }
 
   ${({ theme }) => theme.mediaQueries.md} {
-    width: 756px;
+    width: 426px;
   }
 `
 
