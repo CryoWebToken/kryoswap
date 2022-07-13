@@ -44,7 +44,7 @@ const StyledCard = styled(Card)`
   }
 
   ${({ theme }) => theme.mediaQueries.md} {
-    width: 426px;
+    width: 380px;
   }
 `
 
@@ -150,7 +150,7 @@ const NextDrawCard = () => {
               <iframe
                 src="https://widget.onramper.com?color=266677&apiKey=pk_test_2M8G4ogrYT0dF6dTlcM0yFvZkTIGoRYoRXrDndbOSdU0"
                 height="660px"
-                width="382px"
+                width="362px"
                 title="Onramper widget"
                 allow="accelerometer; autoplay; camera; gyroscope; payment"
               />
