@@ -51,14 +51,14 @@ const Lottery = () => {
           containerProps={{ style: { marginTop: '-30px' } }}
           background={GET_TICKETS_BG}
           concaveDivider
-          clipFill={{ light: '#7645D9' }}
+          clipFill={{ light: '#1BD1B1' }}
           dividerPosition="top"
           index={2}
         >
           <Flex alignItems="center" justifyContent="center" flexDirection="column" pt="24px">
             {status === LotteryStatus.OPEN && (
               <Heading scale="xl" color="#ffffff" mb="24px" textAlign="center">
-                {t('Purchase BNB With FIAT')}
+                {t('Buy BNB With FIAT')}
               </Heading>
             )}
 

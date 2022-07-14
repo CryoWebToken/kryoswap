@@ -38,6 +38,14 @@ export const mainnetTokens = defineTokens({
     'Cryogen',
     'https://cryogen.life',
   ),
+  yocoin: new Token(
+    MAINNET,
+    '0xdd17629d05e068a9d118ee35d11101d4140d0586',
+    18,
+    'YoCoin',
+    'YOCO',
+    'https://yoco.finance',
+  ),
   FG: new Token(
     MAINNET,
     '0x4492cA0AFF6D603e18Aea5075B49A5ff76b9Ea06',
