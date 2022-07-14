@@ -40,7 +40,7 @@ export const mainnetTokens = defineTokens({
   ),
   yocoin: new Token(
     MAINNET,
-    '0xdd17629d05e068a9d118ee35d11101d4140d0586',
+    '0xDd17629D05E068A9D118ee35d11101d4140D0586',
     18,
     'YoCoin',
     'YOCO',

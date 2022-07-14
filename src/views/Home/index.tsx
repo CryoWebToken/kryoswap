@@ -64,6 +64,19 @@ const Home: React.FC = () => {
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
+        background={theme.colors.gradients.cardHeader}
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <OuterWedgeWrapper>
+          <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
+            <WedgeTopRight />
+          </InnerWedgeWrapper>
+        </OuterWedgeWrapper>
+        <SalesSection {...earnSectionData(t)} />
+      </PageSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
         background="linear-gradient(180deg, #9EE6EB 0%, #1D858D 100%)"
         index={2}
         hasCurvedDivider={false}

@@ -26,26 +26,24 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Earn passive income with crypto.'),
-  bodyText: t('PancakeSwap makes it easy to make your crypto work for you.'),
+  headingText: t('Say hello to YoCoin!'),
+  bodyText: t(
+    'A Safe, Secure, Eco-Friendly, DeFi Cryptocurrency Engineered with the Lowest Trading Fees Available as well as Automatic Rewards for Life!',
+  ),
   reverse: true,
   primaryButton: {
-    to: '/farms',
-    text: t('Explore'),
+    to: '/swap?outputCurrency=0xDd17629D05E068A9D118ee35d11101d4140D0586',
+    text: t('Buy Yoco!'),
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
-    text: t('Learn'),
+    to: 'https://yoco.finance',
+    text: t('Learn More'),
     external: true,
   },
   images: {
     path: '/images/home/earn/',
-    attributes: [
-      { src: 'pie', alt: t('Pie chart') },
-      { src: 'stonks', alt: t('Stocks chart') },
-      { src: 'folder', alt: t('Folder with cake token') },
-    ],
+    attributes: [{ src: 'pie', alt: t('YoCoin') }],
   },
 })
 
