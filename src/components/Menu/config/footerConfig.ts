@@ -27,6 +27,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: 'Apply',
         href: '#',
       },
+      {
+        label: 'KryoSwap is a Cryogen Product',
+        href: 'https://cryogen.life',
+      },
     ],
   },
 ]
