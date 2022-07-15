@@ -60,7 +60,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: '/info/pool/0x6A73A99fAC60c265863307c5A40abf32F0a040aC',
+    to: 'https://cryogen.life',
     text: t('Learn More'),
     external: true,
   },
