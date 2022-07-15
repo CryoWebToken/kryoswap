@@ -3,8 +3,8 @@ import { ContextApi } from 'contexts/Localization/types'
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'KryoSwap',
-  description: 'The safest DeFi Exchange On BSC',
+  title: 'KryoSwap - The Safest DeFi Exchange On BSC ',
+  description: 'The Safest DeFi Exchange On BSC',
   image: 'https://cryogen.life/images/kryobanner.png',
 }
 
