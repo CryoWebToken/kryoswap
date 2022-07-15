@@ -37,7 +37,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: '/info/pool/0xDd17629D05E068A9D118ee35d11101d4140D0586',
+    to: 'https://yoco.finance',
     text: t('Learn More'),
     external: true,
   },
