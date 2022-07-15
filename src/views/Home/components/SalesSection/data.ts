@@ -37,7 +37,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://yoco.finance',
+    to: '/info/token/0xDd17629D05E068A9D118ee35d11101d4140D0586',
     text: t('Learn More'),
     external: true,
   },
@@ -60,7 +60,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://cryogen.life',
+    to: '/info/token/0x6A73A99fAC60c265863307c5A40abf32F0a040aC',
     text: t('Learn More'),
     external: true,
   },
