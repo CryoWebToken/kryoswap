@@ -1,30 +1,6 @@
 import { TranslateFunction } from 'contexts/Localization/types'
 import { SalesSectionProps } from '.'
 
-export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('Trade anything. No registration, no hassle.'),
-  bodyText: t('Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.'),
-  reverse: false,
-  primaryButton: {
-    to: '/swap',
-    text: t('Trade Now'),
-    external: false,
-  },
-  secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
-    text: t('Learn'),
-    external: true,
-  },
-  images: {
-    path: '/images/home/trade/',
-    attributes: [
-      { src: 'BNB', alt: t('BNB token') },
-      { src: 'BTC', alt: t('BTC token') },
-      { src: 'CAKE', alt: t('CAKE token') },
-    ],
-  },
-})
-
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Say hello to YoCoin!'),
   bodyText: t(
@@ -40,6 +16,11 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     to: 'https://yoco.finance',
     text: t('Learn More'),
     external: true,
+  },
+  primaryButton2: {
+    to: 'https://github.com/CryoWebToken/audits/blob/main/yocoin_audit.pdf',
+    text: t('YoCo Audit PDF'),
+    external: false,
   },
   images: {
     path: '/images/home/earn/',
@@ -63,6 +44,11 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     to: 'https://cryogen.life',
     text: t('Learn More'),
     external: true,
+  },
+  primaryButton2: {
+    to: '/swap?outputCurrency=0x6A73A99fAC60c265863307c5A40abf32F0a040aC',
+    text: t('Cryogen Audit'),
+    external: false,
   },
   images: {
     path: 'https://cryogen.life/images/',

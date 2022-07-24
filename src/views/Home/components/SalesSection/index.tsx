@@ -14,12 +14,13 @@ export interface SalesSectionProps {
   bodyText: string
   reverse: boolean
   primaryButton: SalesSectionButton
+  primaryButton2: SalesSectionButton
   secondaryButton: SalesSectionButton
   images: CompositeImageProps
 }
 
 const SalesSection: React.FC<SalesSectionProps> = (props) => {
-  const { headingText, bodyText, reverse, primaryButton, secondaryButton, images } = props
+  const { headingText, bodyText, reverse, primaryButton, primaryButton2, secondaryButton, images } = props
 
   return (
     <Flex flexDirection="column">
@@ -51,6 +52,21 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
                 <RouterLink to={primaryButton.to}>
                   <Text color="card" bold fontSize="16px">
                     {primaryButton.text}
+                  </Text>
+                </RouterLink>
+              )}
+            </Button>
+            <Button mr="16px">
+              {primaryButton2.external ? (
+                <Link external href={primaryButton2.to}>
+                  <Text color="card" bold fontSize="16px">
+                    {primaryButton2.text}
+                  </Text>
+                </Link>
+              ) : (
+                <RouterLink to={primaryButton2.to}>
+                  <Text color="card" bold fontSize="16px">
+                    {primaryButton2.text}
                   </Text>
                 </RouterLink>
               )}
