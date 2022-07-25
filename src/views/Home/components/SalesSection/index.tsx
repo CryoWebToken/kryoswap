@@ -50,7 +50,7 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
                 </Link>
               ) : (
                 <RouterLink to={primaryButton.to}>
-                  <Text color="card" bold fontSize="16px">
+                  <Text color="card" bold fontSize="14px">
                     {primaryButton.text}
                   </Text>
                 </RouterLink>
@@ -65,7 +65,7 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
                 </Link>
               ) : (
                 <RouterLink to={primaryButton2.to}>
-                  <Text color="card" bold fontSize="16px">
+                  <Text color="card" bold fontSize="14px">
                     {primaryButton2.text}
                   </Text>
                 </RouterLink>
