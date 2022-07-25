@@ -19,7 +19,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   },
   primaryButton2: {
     to: 'https://github.com/CryoWebToken/audits/blob/main/yocoin_audit.pdf',
-    text: t('YoCo Audit PDF'),
+    text: t('YoCo Audit'),
     external: false,
   },
   images: {
@@ -46,7 +46,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: true,
   },
   primaryButton2: {
-    to: '/swap?outputCurrency=0x6A73A99fAC60c265863307c5A40abf32F0a040aC',
+    to: 'https://cryogen.life/audit.pdf',
     text: t('Cryogen Audit'),
     external: false,
   },

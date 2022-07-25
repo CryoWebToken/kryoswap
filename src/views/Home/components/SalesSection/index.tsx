@@ -71,6 +71,10 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
                 </RouterLink>
               )}
             </Button>
+          </Flex>
+          <Flex>
+            <br />
+            <br />
             {secondaryButton.external ? (
               <Link external href={secondaryButton.to}>
                 {secondaryButton.text}
