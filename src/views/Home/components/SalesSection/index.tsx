@@ -72,12 +72,14 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
               )}
             </Button>
           </Flex>
-          <Flex>
+          <Flex flexDirection={['column-reverse', null, null, reverse ? 'row-reverse' : 'row']} justifyContent="center">
             <br />
             <br />
             {secondaryButton.external ? (
               <Link external href={secondaryButton.to}>
-                {secondaryButton.text}
+                <Text color="card" bold fontSize="16px">
+                  {secondaryButton.text}
+                </Text>
               </Link>
             ) : (
               <RouterLink to={secondaryButton.to}>{secondaryButton.text}</RouterLink>
