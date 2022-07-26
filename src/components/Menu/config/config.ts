@@ -30,55 +30,48 @@ const config: (
   isDark: boolean,
   languageCode?: string,
   chainId?: number,
-) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
-  [
-    {
-      label: t('Trade'),
-      icon: SwapIcon,
-      fillIcon: SwapFillIcon,
-      href: '/swap',
-      showItemsOnMobile: false,
-      items: [
-        {
-          label: t('Swap'),
-          href: '/swap',
-        },
-        {
-          label: t('Limit'),
-          href: '/limit-orders',
-          supportChainIds: [ChainId.BSC],
-        },
-        {
-          label: t('Liquidity'),
-          href: '/liquidity',
-        },
-        // {
-        //   label: t('Transfer'),
-        //   href: '/transfer',
-        // },
-      ].filter((item) => filterItemBySupportChainId(item, chainId)),
-    },
-    {
-      label: t('NFT'),
-      href: `${nftsBaseUrl}`,
-      icon: NftIcon,
-      fillIcon: NftFillIcon,
-      supportChainIds: [ChainId.BSC],
-      items: [
-        {
-          label: t('Overview'),
-          href: `${nftsBaseUrl}`,
-        },
-        {
-          label: t('Collections'),
-          href: `${nftsBaseUrl}/collections`,
-        },
-        {
-          label: t('Activity'),
-          href: `${nftsBaseUrl}/activity`,
-        },
-      ],
-    },
-  ].filter((item) => filterItemBySupportChainId(item, chainId))
+) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) => [
+  {
+    label: t('Trade'),
+    icon: SwapIcon,
+    fillIcon: SwapFillIcon,
+    href: '/swap',
+    showItemsOnMobile: false,
+    items: [
+      {
+        label: t('Swap'),
+        href: '/swap',
+      },
+      {
+        label: t('Liquidity'),
+        href: '/liquidity',
+      },
+      // {
+      //   label: t('Transfer'),
+      //   href: '/transfer',
+      // },
+    ].filter((item) => filterItemBySupportChainId(item, chainId)),
+  },
+  {
+    label: t('NFT'),
+    href: `${nftsBaseUrl}`,
+    icon: NftIcon,
+    fillIcon: NftFillIcon,
+    items: [
+      {
+        label: t('Overview'),
+        href: `${nftsBaseUrl}`,
+      },
+      {
+        label: t('Collections'),
+        href: `${nftsBaseUrl}/collections`,
+      },
+      {
+        label: t('Activity'),
+        href: `${nftsBaseUrl}/activity`,
+      },
+    ],
+  },
+]
 
 export default config
