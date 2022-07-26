@@ -1,36 +1,14 @@
-import {
-  MenuItemsType,
-  DropdownMenuItemType,
-  SwapIcon,
-  SwapFillIcon,
-  EarnFillIcon,
-  EarnIcon,
-  TrophyIcon,
-  TrophyFillIcon,
-  NftIcon,
-  NftFillIcon,
-  MoreIcon,
-} from '@pancakeswap/uikit'
+import { MenuItemsType, SwapIcon, SwapFillIcon, NftIcon, NftFillIcon } from '@pancakeswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
 import { DropdownMenuItems } from '@pancakeswap/uikit/src/components/DropdownMenu/types'
-import { ChainId } from '@pancakeswap/sdk'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean } & {
   items?: ConfigMenuDropDownItemsType[]
 }
 
-const filterItemBySupportChainId = (item, chainId) => {
-  return !chainId || !item.supportChainIds ? true : item.supportChainIds?.includes(chainId)
-}
-
-const config: (
-  t: ContextApi['t'],
-  isDark: boolean,
-  languageCode?: string,
-  chainId?: number,
-) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) => [
+const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType[] = (t, languageCode) => [
   {
     label: t('Trade'),
     icon: SwapIcon,
@@ -50,7 +28,7 @@ const config: (
       //   label: t('Transfer'),
       //   href: '/transfer',
       // },
-    ].filter((item) => filterItemBySupportChainId(item, chainId)),
+    ],
   },
   {
     label: t('NFT'),
