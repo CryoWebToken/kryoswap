@@ -43,6 +43,14 @@
       "logoURI": "https://cryogen.life/images/yoco.png"
     },
     {
+      "name": "TokPie",
+      "symbol": "TKP",
+      "address": "0x7849ed1447250d0B896f89b58f3075B127ca29B3",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cryogen.life/images/tok.png"
+    },
+    {
       "name": "Farmageddon",
       "symbol": "FG",
       "address": "0x4492cA0AFF6D603e18Aea5075B49A5ff76b9Ea06",
