@@ -1,6 +1,5 @@
-import { MenuItemsType, SwapIcon, SwapFillIcon, NftIcon, NftFillIcon } from '@pancakeswap/uikit'
+import { MenuItemsType, SwapIcon, SwapFillIcon } from '@pancakeswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
 import { DropdownMenuItems } from '@pancakeswap/uikit/src/components/DropdownMenu/types'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
@@ -28,26 +27,6 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       //   label: t('Transfer'),
       //   href: '/transfer',
       // },
-    ],
-  },
-  {
-    label: t('NFT'),
-    href: `${nftsBaseUrl}`,
-    icon: NftIcon,
-    fillIcon: NftFillIcon,
-    items: [
-      {
-        label: t('Overview'),
-        href: `${nftsBaseUrl}`,
-      },
-      {
-        label: t('Collections'),
-        href: `${nftsBaseUrl}/collections`,
-      },
-      {
-        label: t('Activity'),
-        href: `${nftsBaseUrl}/activity`,
-      },
     ],
   },
 ]
