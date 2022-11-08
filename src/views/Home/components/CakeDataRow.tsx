@@ -135,7 +135,7 @@ const CakeDataRow = () => {
       </Flex>
 
       <Flex flexDirection="column" style={{ gridArea: 'b' }}>
-        <Text color="textSubtle">{t('Burned to date')}</Text>
+        <Text color="textSubtle">{t('Burned to date.')}</Text>
         <Text lineHeight="1.1" fontSize="24px" bold color="textSubtle">
           {t('123,154,127,582,863')}
         </Text>
